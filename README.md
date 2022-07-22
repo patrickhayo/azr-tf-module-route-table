@@ -78,7 +78,12 @@ module "rt" {
     }
   ]
   subnets_to_associate = {
-    ("mySubneToAssociateName") = {
+    ("mySubneToAssociateName_1") = {
+      subscription_id      = "myVnetToAssociateSubscriptionId"
+      resource_group_name  = "myVnetToAssociateResourceGroupName"
+      virtual_network_name = "myVnetToAssociateName"
+    },
+    ("mySubneToAssociateName_2") = {
       subscription_id      = "myVnetToAssociateSubscriptionId"
       resource_group_name  = "myVnetToAssociateResourceGroupName"
       virtual_network_name = "myVnetToAssociateName"
